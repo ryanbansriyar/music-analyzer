@@ -1,0 +1,15 @@
+# Audio files are large — keep them local, not in git
+pieces/
+
+# !! CRITICAL: The decode key must NOT be committed until all rating is done.
+# Committing key.csv before rating breaks the blind. Add it manually afterwards.
+results/key.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
