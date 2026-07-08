@@ -13,3 +13,9 @@ __pycache__/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Git and OS
+.gitignore
+
+# Draft paper — keep local until ready to share
+PAPER.md

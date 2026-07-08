@@ -66,6 +66,9 @@ Sub-questions:
 ### Phase 3 — Quantitative Analysis Pipeline (complete)
 
 Built a fully operational Python analysis suite under `ai-jazz-analysis/analysis/`:
+Uses the following libraries:
+Librosa
+
 
 | Script | Purpose |
 |---|---|
@@ -221,4 +224,4 @@ Figures are saved to `../figures/`. Ratings are in `results/scores.csv`.
 
 ## Author
 
-Grade 8 Rockschool jazz pianist, 10 years of training. Evaluations reflect idiomatic jazz performance knowledge, not computational musicology credentials — which is precisely the point.
+Grade 8 Rockschool jazz pianist, 10 years of training. Evaluations reflect idiomatic jazz performance knowledge. Grade 12 student studying in Lancers International School. Interested in computer science.
