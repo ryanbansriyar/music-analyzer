@@ -50,17 +50,22 @@ Sub-questions:
 
 - Submitted all 6 prompts to each model; collecting first-generation outputs only (no regeneration)
 - Target: 30 pieces (5 models × 6 prompts)
-- Collected to date: 7 pieces — 5 from Suno v4, 2 from Udio
+- Collected to date: 12 pieces — model attribution confirmed for Suno v4 (5 pieces) and Udio (2 pieces); remaining 5 TBD (no model key file exists)
 - Pieces collected:
 
 | Piece | Model | Prompt Style | Rated? |
 |---|---|---|---|
 | Rail Yard Bop | Suno v4 | Bebop | Yes — 26/30 |
+| Corner Pocket Riff | Suno v4 | Jazz Blues | Yes — 25/30 |
 | Moonlit Voicings | Suno v4 | Jazz Ballad | Yes — 23/30 |
+| Lush Chord Dreams | TBD | Jazz Ballad | Yes — 23/30 |
+| Blue Note Bounce | Suno v4 | 12-Bar Blues | Yes — 21/30 |
+| Sprint_of_the_Brass | TBD | Big-Band Swing | Yes — 20/30 |
+| Blue_and_Purple | TBD | Modal Jazz | Yes — 20/30 |
 | Blue Dorian Drift | Suno v4 | Modal Jazz | Yes — 19/30 |
-| Blue Note Bounce | Suno v4 | 12-Bar Blues / Big Band | No |
-| Corner Pocket Riff | Suno v4 | Jazz Blues | No |
-| Chasing the High Flight | Udio | (TBD) | No |
+| latin_bop | TBD | Latin Jazz | Yes — 17/30 |
+| The_Flaming_Band | TBD | Big-Band Swing | Yes — 17/30 |
+| Chasing the High Flight | Udio | Bebop | Yes — 13/30 |
 | Whispers of the Dorian Sky | Udio | Modal Jazz | Yes — 10/30 |
 
 ### Phase 3 — Quantitative Analysis Pipeline (complete)
@@ -86,8 +91,8 @@ All scripts output to `figures/` and `reports/`. Reports now include a `## Human
 
 - **Rater:** Grade 8 Rockschool jazz pianist, 10 years of training
 - **Rating method:** Listen at least once blind, score all 6 axes, write detailed per-axis notes, then compare against automated analysis and note agreements/discrepancies
-- Detailed written assessments completed: Blue Dorian Drift, Rail Yard Bop, Moonlit Voicings, Whispers of the Dorian Sky
-- Rubric scores entered in `results/scores.csv` for 4 pieces
+- Detailed written assessments completed for all 12 collected pieces
+- Rubric scores entered in `results/scores.csv` for all 12 pieces; per-piece assessment files in `results/notes/`
 
 ### Phase 5 — Second Rater & IRR (not started)
 
@@ -104,39 +109,58 @@ All scripts output to `figures/` and `reports/`. Reports now include a `## Human
 
 ---
 
-## Current Status — June 14, 2026
+## Current Status — July 27, 2026
 
-**Pieces rated:** 4 of a target 30
+**Pieces rated:** 12 of a target 30
 
 | Piece | Harmonic | Swing | Improv | Vocab | Ensemble | Form | Total |
 |---|---|---|---|---|---|---|---|
 | Rail Yard Bop | 4 | 5 | 4 | 4 | 5 | 4 | **26/30** |
+| Corner Pocket Riff | 3 | 5 | 3 | 4 | 5 | 5 | **25/30** |
 | Moonlit Voicings | 4 | 4 | 4 | 4 | 4 | 3 | **23/30** |
+| Lush Chord Dreams | 4 | 4 | 4 | 4 | 5 | 2 | **23/30** |
+| Blue Note Bounce | 4 | 4 | 4 | 3 | 3 | 3 | **21/30** |
+| Sprint_of_the_Brass | 2 | 3 | 4 | 5 | 4 | 2 | **20/30** |
+| Blue_and_Purple | 4 | 3 | 3 | 3 | 5 | 2 | **20/30** |
 | Blue Dorian Drift | 4 | 3 | 4 | 3 | 3 | 2 | **19/30** |
+| latin_bop | 3 | 3 | 2 | 3 | 4 | 2 | **17/30** |
+| The_Flaming_Band | 3 | 2 | 3 | 2 | 4 | 3 | **17/30** |
+| Chasing the High Flight | 2 | 3 | 2 | 3 | 2 | 1 | **13/30** |
 | Whispers of the Dorian Sky | 2 | 2 | 1 | 2 | 2 | 1 | **10/30** |
+| **Axis average** | **3.3** | **3.4** | **3.2** | **3.3** | **3.8** | **2.5** | **19.9/30** |
 
-**Swing ratio measurements (all collected pieces):**
+**Swing ratio measurements (all pieces):**
 
-| Piece | Tempo (BPM) | Swing Ratio | Std Dev | Tool Label |
-|---|---|---|---|---|
-| Blue Note Bounce | 144 | 2.014 | 0.870 | hard swing / triplet feel |
-| Blue Dorian Drift | 128 | 1.710 | 0.894 | strong swing |
-| Moonlit Voicings | 69 | 1.513 | 0.819 | medium swing |
-| Chasing the High Flight | 141 | 1.302 | 0.687 | weak / light swing |
-| Rail Yard Bop | 125 | 1.159 | 0.500 | weak / light swing |
-| Corner Pocket Riff | 100 | 1.096 | 0.422 | essentially straight |
+| Piece | Tempo (BPM) | Swing Ratio | Std Dev | Tool Label | Human Swing |
+|---|---|---|---|---|---|
+| Blue Note Bounce | 144 | 2.014 | 0.870 | hard swing / triplet feel | 4/5 |
+| The_Flaming_Band | 152 | 1.786 | 0.950 | strong swing | 2/5 |
+| Blue Dorian Drift | 128 | 1.710 | 0.894 | strong swing | 3/5 |
+| Moonlit Voicings | 69 | 1.513 | 0.819 | medium swing | 4/5 |
+| Lush Chord Dreams | 108 | 1.487 | 0.859 | medium swing | 4/5 |
+| Blue_and_Purple | 120 | 1.358 | 0.747 | medium swing | 3/5 |
+| Chasing the High Flight | 141 | 1.302 | 0.687 | medium swing | 3/5 |
+| Whispers of the Dorian Sky | 134 | 1.225 | 0.617 | weak / light swing | 2/5 |
+| Rail Yard Bop | 125 | 1.159 | 0.500 | weak / light swing | 5/5 |
+| Sprint_of_the_Brass | 110 | 1.105 | 0.449 | essentially straight | 3/5 |
+| Corner Pocket Riff | 100 | 1.096 | 0.422 | essentially straight | 5/5 |
+| latin_bop | 140 | 1.047 | 0.268 | essentially straight | 3/5 |
 
 **Key emerging findings:**
 
-1. **Automated swing ratio underestimates perceptual swing in polyphonic audio.** Rail Yard Bop scores 1.159 ("weak swing") but receives 5/5 on the human swing axis — the most striking disagreement in the dataset so far. The onset-based detector captures isolated eighth-note pair ratios but misses the felt swing created by bass, drums, and piano interaction.
+1. **Automated swing ratio systematically underestimates perceptual swing in polyphonic audio.** Rail Yard Bop (1.159 → "weak") and Corner Pocket Riff (1.096 → "essentially straight") both receive 5/5 human swing. The onset-based detector captures isolated eighth-note pair ratios but misses the felt groove created by bass, drums, and piano interaction. High ratio does not guarantee perceived swing either: The_Flaming_Band (1.786 → "strong") scores only 2/5 because the swing collapses completely at 2:45.
 
-2. **The ii-V-I detector consistently underdetects on polyphonic audio.** Both Blue Dorian Drift and Rail Yard Bop show 0 detected ii-V-I progressions despite the human rater clearly hearing multiple functional progressions. This is a recurring limitation of template-matching on mixed audio.
+2. **Latin jazz is the one case where a near-straight ratio is correct.** latin_bop's ratio of 1.047 correctly reflects clave-based straight eighth-note feel; the 3/5 human swing score reflects that the clave pattern itself is underdeveloped, not that the ratio misled. This is the only piece in the dataset where the tool and human agree on the underlying rhythm.
 
-3. **Formal structure is the weakest axis across all rated pieces** (average 2.5/5). Every piece loses points here — the AI models appear to lack the ability to commit to and execute a formal plan over the full duration of a piece.
+3. **The ii-V-I detector consistently underdetects on polyphonic audio.** Across all 12 pieces, only Moonlit Voicings (1) and Chasing the High Flight (1) registered any detections, yet the human rater hears functional ii-V-I motion in Rail Yard Bop, Blue Dorian Drift, Blue Note Bounce, Lush Chord Dreams, and Corner Pocket Riff. Template-matching on mixed audio is not a viable ii-V-I detection method.
 
-4. **Local coherence outlasts global coherence.** Pieces can sound convincing on a 30-second excerpt but become incoherent as a full piece. Blue Dorian Drift's style shift at 1:34 is the clearest example. "Whispers of the Dorian Sky" began to deteriorate at 0:32, with random chords by 0:47 and incoherent fast runs by 0:55.
+4. **Formal structure is the weakest axis across all rated pieces** (axis average 2.5/5 — lowest of the six). Every piece except Corner Pocket Riff scores ≤ 3 here. AI models appear to lack the ability to commit to and execute a formal plan over the full duration of a piece.
 
-5. **The best-rated piece would pass as amateur human jazz.** Rail Yard Bop (26/30) received 5/5 on both swing and ensemble interaction. The human rater's verdict: "Non-jazz listeners would not be able to figure it out, and jazz musicians may just call it 'bad' rather than 'AI.'"
+5. **Local coherence outlasts global coherence.** Pieces can sound convincing in a 30-second excerpt but deteriorate as a full piece. Whispers of the Dorian Sky begins to break down at 0:32; The_Flaming_Band collapses at 2:45; Blue Dorian Drift shifts style unexpectedly at 1:34. This is the most consistent failure mode in the dataset.
+
+6. **Strong quantitative metrics can mask poor perceptual quality.** Chasing the High Flight has 94% jazz complexity and 1 detected ii-V-I — the strongest harmonic metrics in the new batch — but scores 13/30. The individual notes are correct; the chord progression is absent. No automated metric captures this distinction.
+
+7. **The best-rated pieces would pass as amateur human jazz.** Rail Yard Bop (26/30): "Non-jazz listeners would not be able to figure it out, and jazz musicians may just call it 'bad' rather than 'AI.'" Corner Pocket Riff (25/30): "Hard to identify as AI." Lush Chord Dreams (23/30): "Could fool most musicians and non-musicians." The dataset ceiling is competent-amateur jazz, not professional.
 
 ---
 

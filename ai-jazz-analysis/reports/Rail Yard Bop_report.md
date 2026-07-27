@@ -1,6 +1,6 @@
 # Piece Report: Rail Yard Bop
 
-*Generated: 2026-06-13 12:54*
+*Generated: 2026-07-17 12:15*
 
 ---
 
@@ -17,17 +17,17 @@
 | Unique chords | 53 |
 | Jazz PC similarity | 0.984 |
 | Harmonic complexity | 0.932 |
-| Rubric total | **26/30** |
+| Rubric total | 26/30 |
 
 ---
 
 ## AI Musical Assessment
 
-"Rail Yard Bop" features a tempo of 125 BPM, which sits comfortably within the realm of a lively upbeat jazz piece. However, the swing ratio, measuring at 1.159, suggests a weak and light swing feel, closely bordering on a straight rhythm. This subtle swing, combined with a substantial standard deviation of 0.500, implies that there is an expressive variation in the rhythm, but it lacks the robust swing necessary for capturing a traditional jazz feel. The overall rhythmic character might be perceived as lacking the driving groove associated with classic bebop or swing jazz.
+Rail Yard Bop is the most important piece in this dataset for understanding the limits of automated swing detection. A mean swing ratio of 1.159 at 125 BPM is classified as "weak / light swing" — yet the human rater awards 5/5 for swing feel and describes it as "pretty much perfect" bebop swing. This is the largest human–detector divergence in the dataset and establishes a clear methodological finding: onset-based swing ratio detection on polyphonic audio is an unreliable sole measure of perceptual swing, particularly when the felt groove is produced by the interaction of bass, drums, and piano rather than a single melodic line. The standard deviation of 0.500 indicates stable, consistent timing — consistent with a tight rhythm section rather than rhythmic chaos — which makes the low mean ratio even more notable.
 
-On the harmonic front, the piece demonstrates significant complexity with 94% of the beats incorporating 7th-or-richer chords. This high level of harmonic sophistication indicates a strong grasp of jazz harmony. However, the absence of any ii-V-I progressions, a staple in jazz, diminishes its authenticity and could limit its appeal to jazz purists. The piece favors major 7th chords heavily and exhibits a strong harmonic diversity, as evidenced by the broad variety of chords used, such as Fmaj7 and Dm7, yet it neglects to establish the tension and resolution typical in standard jazz progressions.
+The harmonic data is strong. Jazz complexity of 94% indicates near-universal use of 7th-chord-or-richer voicings, and pitch-class similarity of 0.965 confirms idiomatic jazz pitch material. The ii-V-I detector reports zero progressions despite the rater clearly hearing many — this piece is described as having "many ii-V-Is" as a defining feature of its harmonic character. The 94% richness figure agrees with the human impression of strong harmonic sophistication. This is another clean case of the detector failing on polyphonic audio while the chord quality metric is actually informative.
 
-Overall, "Rail Yard Bop" resembles a more modern or experimental form of jazz, which favors harmonic exploration but does so at the expense of traditional rhythmic swing. One strength of the piece is its rich and varied harmonic language, which contains a high similarity to jazz conventions. However, a notable weakness is its lack of rhythmic authenticity, especially in terms of swing, which may leave listeners yearning for the characteristic push-and-pull momentum that defines much of classic jazz.
+Rail Yard Bop scores 26/30 — the highest total in the dataset — and the rater's verdict is definitive: "Non-jazz listeners would not be able to figure it out, and jazz musicians may just call it 'bad' rather than 'AI.'" This is the "amateur jazz ceiling" finding central to this study. The piece is generic and lacks the complexity of professional jazz, but it is competent at every measured axis. Formal structure (4/5) is notably stronger than most pieces, which typically fail here. The only meaningful weakness is generic vocabulary — the piece produces bebop-appropriate material without the individual voice of a human jazz composer.
 
 ---
 
@@ -81,41 +81,43 @@ Valid eighth-note pairs analysed: **681**
 
 ## Rubric Scores
 
-**Rater:** Ryan · Grade 8 Rockschool jazz pianist · Listening date: 2026-06-13
-
 | Axis | Score (1–5) | Visual |
 | --- | --- | --- |
 | Harmonic Authenticity | 4 | ■■■■□ |
-| Swing Feel & Microtiming | 5 | ■■■■■ |
+| Swing Feel | 5 | ■■■■■ |
 | Improvisational Coherence | 4 | ■■■■□ |
-| Idiomatic Jazz Vocabulary | 4 | ■■■■□ |
+| Idiomatic Vocabulary | 4 | ■■■■□ |
 | Ensemble Interaction | 5 | ■■■■■ |
 | Formal Structure | 4 | ■■■■□ |
-| **Total** | **26/30** | |
+| **Total** | **26/30** |  |
 
-> Classic bebop feel with convincing swing — tool's 1.159 ratio underestimates what the ear hears. ii-V-Is clearly present despite automated detector saying 0. Generic but competent: jazz musician would call it "bad", not "AI-generated".
+> Classic bebop feel with many ii-V-Is. Swing sounds convincing despite tool rating it as weak. Generic but competent — jazz musician would call it bad not AI-generated.
 
 ---
 
-## Human Assessment
+## Human Analysis
 
-### Overall Impression
+*Rater: Ryan · Grade 8 Rockschool jazz pianist · Listening date: 2026-06-13*
 
-The swing feels really good here. The piano comping can be sporadic at times but feels natural to an intermediate player. The melody has repetition and proper phrasing. Really good overall.
+**First impression:**
 
-### Where I Agree / Disagree with the Automated Analysis
+The swing feels really good. The piano comping can be sporadic at times but feels natural to an intermediate player. The melody has repetition and proper phrasing. Really good overall.
 
-**Swing ratio 1.159 ("weak / light swing"):** Strong disagreement. The ear clearly hears a convincing bebop swing. The automated ratio likely underestimates because the tool measures consecutive eighth-note pairs in isolation and misses the felt interaction between bass, drums, and piano. Swing at 125 BPM in a bebop context can read tighter than it sounds.
+**Rhythmic feel:**
 
-**ii-V-I count (tool says 0):** Strong disagreement. The piece has many ii-V-Is — this is one of its defining harmonic characteristics and one of the reasons for the Harmonic Authenticity score of 4. Consistent failure mode of the automated detector on polyphonic audio.
+Pretty much perfect — percussion stays consistent to the end and even has an improvisation section that is quite classic. Timing is spot on for 99% of the instruments.
 
-**94% 7th-chord richness:** Agrees with the human impression of strong harmonic sophistication.
+**Harmonic observations:**
 
-### Verdict
+The chords are extremely classic for a bebop feel with many ii-V-Is. There is a clear A section defined by the chords which repeats properly. Sometimes a different chord is used and it can feel slightly random. Voice leading is present with no chord islands.
 
-This piece is pretty much a generic bebop song. It would be difficult to call it "AI generated" — instead it just has lower quality than professional jazz. Non-jazz listeners would not be able to figure it out, and jazz musicians may just call it "bad" rather than "AI."
+**Stylistic resemblance:**
 
-*Full assessment: [results/notes/Rail Yard Bop_assessment.md](../results/notes/Rail Yard Bop_assessment.md)*
+Classic bebop. The piece is generic but competent — a jazz musician would call it bad, not AI-generated. Closely resembles a basic bebop head with rhythm section comp and one improvised chorus.
+
+**Discrepancies from AI assessment:**
+
+Swing ratio 1.159 (tool: "weak / light swing") — strong disagreement. The ear clearly hears convincing bebop swing. The tool is likely underestimating because it measures consecutive eighth-note pairs in isolation and misses the interaction between bass, drums, and piano. ii-V-I count (tool: 0) — strong disagreement. Many ii-V-Is are a defining feature of the harmonic character. This is a consistent failure mode of the automated detector on polyphonic audio. 94% 7th-chord richness agrees with the human impression of strong harmonic sophistication.
 
 ---
 

@@ -1,6 +1,6 @@
 # Piece Report: Chasing the High Flight - FuchsiaSoaringVuvuzela182103
 
-*Generated: 2026-06-13 12:53*
+*Generated: 2026-07-17 11:42*
 
 ---
 
@@ -17,17 +17,17 @@
 | Unique chords | 49 |
 | Jazz PC similarity | 0.964 |
 | Harmonic complexity | 0.906 |
-| Rubric total | *(not rated)* |
+| Rubric total | 13/30 |
 
 ---
 
 ## AI Musical Assessment
 
-"Chasing the High Flight" sets off at an energetic tempo of 141 BPM, which should typically encourage a lively and driving rhythm. The detected mean swing ratio of 1.302 aligns with a medium swing, but the substantial swing standard deviation of 0.687 suggests considerable rhythmic variation. This rhythmic expressiveness can be seen as an effort to infuse the piece with spontaneity and human-like feel, attributes highly valued in jazz. However, such a high deviation may cause the swing feel to become inconsistent, potentially disrupting the overall groove and natural flow that typically characterizes an effective swinging jazz piece.
+Chasing the High Flight registers a swing ratio of 1.302 at 141 BPM — medium swing, which at this tempo is a reasonable result. The standard deviation of 0.687 is moderate, suggesting some rhythmic inconsistency but not the extreme instability seen in pieces like Blue Dorian Drift or The Flaming Band. With 482 valid pairs — one of the highest counts in the dataset — this is a statistically reliable measurement, giving more confidence in the medium-swing classification than most pieces. The known detector bias suggests the perceptual swing may be stronger than 1.302 implies, though the gap between detected and felt swing is likely smaller here than in the low-ratio pieces like Rail Yard Bop.
 
-Harmonically, "Chasing the High Flight" demonstrates commendable complexity, with 94% of the chords incorporating 7th extensions or richer, which reflects a sophisticated level of jazz literacy. However, the absence of ii-V-I progressions is unconventional, given their fundamental role in jazz harmony. The predominance of major 7th chords like Abmaj7 and Dbmaj7 contributes to a lush but perhaps overly homogeneous harmonic landscape, lacking the tension and release that ii-V-I sequences traditionally provide. This piece exhibits a high jazz pitch-class similarity of 0.964, indicating a strong adherence to jazz harmonic norms despite its atypical progression choices.
+The harmonic profile is strong on paper. Jazz complexity of 94% and pitch-class similarity of 0.964 are both high, and this is the only piece in the new batch to register a detected ii-V-I progression (count: 1). While a single detection is modest, it confirms that at least one functional jazz cadence is present in a form the detector can recognise. F minor as the detected key gives a naturally jazz-appropriate tonal centre, and 49 unique chords at this tempo represents high harmonic density. The Udio-style filename suggests this is one of two Udio-generated pieces in the dataset alongside Whispers of the Dorian Sky, making direct comparison between the two Udio pieces methodologically interesting.
 
-In conclusion, "Chasing the High Flight" channels elements of modern jazz, characterized by both harmonic richness and a variable rhythmic feel. A specific strength is its harmonic density and jazz pitch alignment, contributing to a sonically rich piece. However, a notable weakness is its lack of traditional ii-V-I progressions, which might make it less accessible to listeners familiar with canonical jazz structures. Adjustments to its harmonic framework and swing consistency could enhance its stylistic impact and authenticity in the jazz genre.
+Chasing the High Flight presents the best quantitative case for harmonic sophistication among the Udio pieces, and the contrast with Whispers of the Dorian Sky will be telling. Where Whispers collapsed from coherent to chaotic within 55 seconds, the more reliable swing measurement and the detected ii-V-I progression here suggest a more consistent piece. The key human evaluation questions are: does the 141 BPM feel translate to genuine jazz energy, does the piece sustain its harmonic coherence over its full duration, and does the formal structure hold — the axis that most consistently exposes model limitations across this entire dataset.
 
 ---
 
@@ -80,7 +80,43 @@ Valid eighth-note pairs analysed: **482**
 
 ## Rubric Scores
 
-*Not yet rated. Run `rating_helper.py` to score this piece.*
+| Axis | Score (1–5) | Visual |
+| --- | --- | --- |
+| Harmonic Authenticity | 2 | ■■□□□ |
+| Swing Feel | 3 | ■■■□□ |
+| Improvisational Coherence | 2 | ■■□□□ |
+| Idiomatic Vocabulary | 3 | ■■■□□ |
+| Ensemble Interaction | 2 | ■■□□□ |
+| Formal Structure | 1 | ■□□□□ |
+| **Total** | **13/30** |  |
+
+> No chord progression despite correct individual notes. Percussion static throughout — zero call-and-response. Solo sporadic and random. No structure. Detectable as AI by most listeners.
+
+---
+
+## Human Analysis
+
+*Rater: Ryan · Grade 8 Rockschool jazz pianist · Listening date: 2026-06-13 · Times listened: 6*
+
+**First impression:**
+
+Just feels quite random, with no long-term structural sense. In short bursts it can sound okay, but in the context of the whole piece it just doesn't work at all.
+
+**Rhythmic feel:**
+
+Swing is consistent in a micro-context but feels variable across the whole song. No evolution or adaptation in the percussion — static throughout.
+
+**Harmonic observations:**
+
+There is essentially no chord progression, even though the individual harmonic notes throughout are correct. The pieces are present but not assembled into anything functional.
+
+**Stylistic resemblance:**
+
+Difficult to place in a specific substyle — the randomness prevents any clear stylistic identity from forming.
+
+**Discrepancies from AI assessment:**
+
+The AI assessment was optimistic, predicting this as the stronger of the two Udio pieces with sustained coherence. The opposite is true: the 94% jazz complexity and single detected ii-V-I look convincing in the data, but the individual notes are correct while the progression is absent — a distinction the quantitative tools cannot make. The percussion being static throughout (zero call-and-response) is invisible to the chord and swing detectors but is one of the most immediately obvious failure modes on listening. This is the clearest example in the dataset of strong quantitative metrics masking poor perceptual quality.
 
 ---
 

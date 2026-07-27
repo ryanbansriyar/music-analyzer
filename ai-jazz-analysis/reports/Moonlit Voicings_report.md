@@ -1,6 +1,6 @@
 # Piece Report: Moonlit Voicings
 
-*Generated: 2026-06-13 12:54*
+*Generated: 2026-07-17 12:15*
 
 ---
 
@@ -17,17 +17,17 @@
 | Unique chords | 40 |
 | Jazz PC similarity | 0.965 |
 | Harmonic complexity | 0.850 |
-| Rubric total | **23/30** |
+| Rubric total | 23/30 |
 
 ---
 
 ## AI Musical Assessment
 
-The rhythmic character of "Moonlit Voicings" suggests a medium swing feel as indicated by the mean swing ratio of 1.513. This swing ratio implies a moderate degree of rhythmic bounce characteristic of traditional jazz but lacks the push towards the harder swing of bebop. The high standard deviation of 0.819 speaks to a significant level of expressive variation, which could indicate a dynamic range in the piece's execution if handled skillfully. However, such a high deviation might also result in inconsistencies, potentially affecting the cohesive swing feel necessary for a genuine jazz experience. Therefore, while it attempts to swing, the rhythmic inconsistency may detract from the authentic swing sensation expected in expertly performed jazz.
+Moonlit Voicings is the slowest piece in the dataset at 69 BPM with a swing ratio of 1.513 — medium swing, sitting almost exactly at the reference midpoint. The standard deviation of 0.819 is high, but at a slow ballad tempo, rhythmic flexibility around the beat is expected and musically appropriate. The human rater gives 4/5 for swing and describes the piece as following a 6/8 ballad feel with consistently in-tempo percussion — the high variance is attributable to the piano comping being "slightly off-time" rather than to general rhythmic instability. This is the most accurate swing classification in the dataset: medium swing at a slow 6/8 ballad tempo is precisely what 1.513 describes.
 
-In terms of harmonic sophistication, "Moonlit Voicings" shows a decent degree of jazz literacy with 70% of the beats featuring 7th-or-richer chords. However, the absence of any ii-V-I progressions, which are fundamental to jazz harmony, suggests a lack of classic jazz chord progressions that often drive the genre's harmonic tension and resolution. The frequent use of dominant 7th (25%) and major 7th chords (22%) points to an understanding of jazz harmony, yet the lack of common progressions like ii-V-I might limit the piece's stylistic authenticity. The harmonic variety, as seen in the use of chords such as G7 and Bbmaj7, demonstrates an attempt to explore richer sonic textures, albeit without the full execution of traditional jazz progression forms.
+The harmonic data shows strong jazz sophistication. Jazz complexity of 83% and pitch-class similarity of 0.969 are both high. The ii-V-I detector finds one progression — consistent with the human rater hearing 3-2-5-1 progressions from the very opening (0:01) and noting that the actual count is likely higher. The rater attributes the undercount to the detector's polyphonic audio limitation. The detected key of F# major is plausible for a ballad with chromatic harmonic movement; the rater identifies occasional out-of-place chords that make section boundaries unclear, consistent with harmonic complexity of 0.899 — all twelve pitch classes are nearly equally active.
 
-Overall, "Moonlit Voicings" resembles a modern jazz piece that attempts to balance traditional harmonic structures with a moderately swinging rhythmic feel. A specific strength lies in its harmonics; the piece's high jazz pitch-class similarity score (0.965) indicates an adept use of jazz-related pitches. Conversely, a notable weakness is its structural coherence, particularly the lack of ii-V-I progressions, which results in a less authentic jazz sound. As an AI-generated work, it holds promise in melodic and harmonic mimicry but requires further development in rhythmic consistency to achieve a more genuine jazz feel.
+Moonlit Voicings scores 23/30 and sits comfortably in the "would fool most listeners" tier. The rater's specific verdict — "would fool most listeners" but detectable by someone "really good at listening to music and its intricacies" — maps precisely onto the "amateur jazz" ceiling identified across the dataset. The piano comping being slightly off-time is the most specific and human-detectable failure; the formal structure (3/5) is weaker than the local musical content, consistent with the pattern seen across nearly every piece. The strength is harmonic: the chord extensions and 3-2-5-1 progressions are the most convincing ballad harmony in the dataset.
 
 ---
 
@@ -81,41 +81,43 @@ Valid eighth-note pairs analysed: **161**
 
 ## Rubric Scores
 
-**Rater:** Ryan · Grade 8 Rockschool jazz pianist · Listening date: 2026-06-13
-
 | Axis | Score (1–5) | Visual |
 | --- | --- | --- |
 | Harmonic Authenticity | 4 | ■■■■□ |
-| Swing Feel & Microtiming | 4 | ■■■■□ |
+| Swing Feel | 4 | ■■■■□ |
 | Improvisational Coherence | 4 | ■■■■□ |
-| Idiomatic Jazz Vocabulary | 4 | ■■■■□ |
+| Idiomatic Vocabulary | 4 | ■■■■□ |
 | Ensemble Interaction | 4 | ■■■■□ |
 | Formal Structure | 3 | ■■■□□ |
-| **Total** | **23/30** | |
+| **Total** | **23/30** |  |
 
-> 6/8 ballad feel with 3-2-5-1 progressions from 0:01. Piano comping occasionally off-time. Chords go out of place making section boundaries unclear. Would fool most listeners.
+> 6/8 ballad feel. Piano comping slightly off-time. 3-2-5-1 progressions from 0:01. Chords occasionally out of place making section boundaries unclear. Would fool most listeners.
 
 ---
 
-## Human Assessment
+## Human Analysis
 
-### Overall Impression
+*Rater: Ryan · Grade 8 Rockschool jazz pianist · Listening date: 2026-06-13*
 
-The swing feels really good here. The piano comping can be sporadic at times but feels natural to an intermediate player. The melody has repetition and proper phrasing. Really good overall.
+**First impression:**
 
-### Where I Agree / Disagree with the Automated Analysis
+The swing feels really good. Piano comping can be sporadic at times but feels natural to an intermediate player. The melody has repetition and proper phrasing. Really good overall.
 
-**ii-V-I count (tool says 1):** Likely underdetecting — the human assessment notes 3-2-5-1 progressions from the very start (0:01), suggesting multiple functional progressions are present that the detector missed. Consistent with the pattern seen across other pieces.
+**Rhythmic feel:**
 
-**Swing ratio 1.513 ("medium swing"):** Agrees with human impression — this is the most accurate automated swing classification across all rated pieces so far, consistent with the ballad/6/8 feel.
+Proper swing with consistently in-tempo percussion. The chord comping can be slightly off-time or unnatural at points. Follows a 6/8 pattern for the melody and feel, encapsulating a ballad well.
 
-**Swing std dev 0.819:** The AI summary attributes this to general inconsistency, but the human assessment locates the variance more precisely: the piano comping is occasionally off-time, while the percussion holds steady throughout.
+**Harmonic observations:**
 
-### Verdict
+Chords converge into each other with each chord leading to the next properly. Some level of complexity with extensions that fit properly. Clear section defined by the chords. Examples include 3-2-5-1 progressions from 0:01. Chords occasionally out of place making section boundaries unclear.
 
-This song would be classified as jazz. However, people with a good ear for musical intricacy, or jazz musicians, may detect that it is AI-generated — due to sometimes just feeling off, or having changed/incorrect chords and melodies when repeating.
+**Stylistic resemblance:**
 
-*Full assessment: [results/notes/Moonlit Voicings_assessment.md](../results/notes/Moonlit Voicings_assessment.md)*
+Jazz ballad in 6/8 — closest to a Bill Evans or Keith Jarrett piano trio ballad. Would fool most listeners as a real jazz recording.
+
+**Discrepancies from AI assessment:**
+
+ii-V-I count (tool: 1) — partially agrees, but the human assessment notes 3-2-5-1 progressions from the very start at 0:01, suggesting the actual count is higher. The tool underdetects again. Swing ratio 1.513 ("medium swing") — agrees with human impression and is the most accurate swing classification across all pieces rated so far. Swing std dev 0.819 — the AI summary attributes this variance to "inconsistency," but the human identifies it as coming specifically from the piano comping being slightly off-time, not general rhythmic instability.
 
 ---
 
